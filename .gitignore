@@ -1,0 +1,23 @@
+# Visual Studio specific files
+**/[Bb]in*
+**/obj*
+**/[Uu]serSecrets*
+
+# Visual Studio Code specific files
+!.vscode/settings.json
+!.vscode/tasks.json
+!**/launchSettings.json
+
+# Build artifacts
+**/bin/
+**/obj/
+
+# Temporary files
+**/temp.*
+
+# Package Manager lock files
+**/project.lock*
+**/NuGet.config
+
+# Test results
+**/TestResults/*

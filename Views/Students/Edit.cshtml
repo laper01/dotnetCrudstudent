@@ -1,0 +1,49 @@
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@model schoolportal.Models.Entities.Student;
+
+<h1>Add Student</h1>
+
+
+<form method="post">
+
+<div class="mt-3" >
+    <label for="Name" class="form-label" >Id</label>
+    <input type="text" class="form-control" asp-for="Id" readonly>
+</div>
+
+<div class="mt-3" >
+    <label for="Name" class="form-label" >Name</label>
+    <input type="text" class="form-control" asp-for="Name">
+</div>
+
+<div class="mt-3" >
+    <label for="Name" class="form-label" >Email</label>
+    <input type="text" class="form-control" asp-for="Email">
+
+</div>
+
+<div class="mt-3" >
+    <label for="Name" class="form-label" >Phone</label>
+    <input type="text" class="form-control" asp-for="Phone" >
+</div>
+
+<div>
+    <input type="checkbox"  id="subscribe" class="form-check-input" asp-for="Subscribe" >
+    <label for="subscribe" class="form-check-label" >Subscribe</label>
+</div>
+
+<div class="mt-3">
+    <button type="submit" class="btn btn-primary" > Submit</button>
+</div>
+
+<div class="mt-3">
+    <button type="submit" class="btn btn-danger" 
+    asp-controller="Students"
+    asp-action="Delete"
+    > Delete</button>
+</div>
+
+</form>
